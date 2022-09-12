@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { useMotionValue, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Props {
   className?: string;
