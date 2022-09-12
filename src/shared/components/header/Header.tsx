@@ -8,7 +8,7 @@ export const Header = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <header className='h-24 flex justify-between items-center px-8 py-4'>
+    <header className='flex items-center justify-between h-24 px-8 py-4'>
       <div>
         <img className='w-10 h-10' src={DEVER_LOGO} alt='Dever Logo' />
       </div>
@@ -17,7 +17,7 @@ export const Header = () => {
         {navItems.map((item, idx) => (
           <Link
             key={idx}
-            className='relative hover:text-[#049CFC] duration-150'
+            className='relative hover:text-[#049CFC] duration-150 text-gray-500 font-semibold'
             to={item.href}
             onClick={() => setActive(idx)}
           >
